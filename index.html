@@ -23,7 +23,7 @@
 	<meta property="og:title" content="Nina Carducci - Photographe" />
 	<meta name="keywords" content="photographe, mariage, portrait, entreprise, album photo, retouche photo" />
 
-	 <!-- Twitter/X -->
+	 <!-- X mta tags -->
 
 	 <meta name="twitter:site" content="@ninacarducci.photo">
 	<meta name="twitter:title" content="Nina Carducci - Photographe">
@@ -31,6 +31,15 @@
 	<meta name="twitter:description" content="Nina Carducci, photographe professionnelle à Bordeaux, propose des services photographiques de qualité avec des prix allant de 50€ à 400€.">
 	<meta name="twitter:image" content="./assets/images/og-image.jpg">
 	<meta name="twitter:url" content="https://github.com/MF-didier/Nina_Carducci-master.git">
+
+
+	<!-- Facebook Meta Tags -->
+	<meta property="og:title" content="Nina Carducci - Photographe" />
+	<meta property="og:description" content="Nina Carducci, photographe professionnelle à Bordeaux, propose des services photographiques de qualité avec des prix allant de 50€ à 400€." />
+	<meta property="og:image" content="./assets/images/og-image.jpg" />
+	<meta property="og:url" content="https://github.com/MF-didier/Nina_Carducci-master.git" />
+	<meta property="og:type" content="website" />
+
 
          <!--setup_site.js-->
 
@@ -41,31 +50,66 @@
 	<script src="./assets/scripts.js"></script>
 
 
-	<!--shema markup-->
+	<!-- Schema markup -->
 	<script type="application/ld+json">
 	{
 		"@context": "https://schema.org",
 		"@type": "Person",
 		"name": "Nina Carducci",
-		"image": "./assets/images/nina.png",
+		"image": "https://github.com/MF-didier/Nina_Carducci-master/raw/main/assets/images/nina.png",
 		"jobTitle": "Photographe",
+		"url": "https://github.com/MF-didier/Nina_Carducci-master.git",
+		"priceRange": "50€-400€",
 		"address": {
 			"@type": "PostalAddress",
+			"streetAddress": "68 avenue Alsace-Lorraine",
 			"addressLocality": "Bordeaux",
-			"addressCountry": "France"
+			"postalCode": "33200",
+			"addressCountry": "FR"
 		},
-		"email": "
+		"email": "mailto:melatausa@gmail.com",
+		"telephone": "+33-5-56-67-78-89",
+		"openingHours": "Mo-Fr 10:00-19:00",
+		"sameAs": [
+			"https://www.instagram.com/ninacarducci.photo/?hl=fr"
+		]
+	}
+	</script>
+
+	<!-- Stylesheets -->
 	<link rel="stylesheet" href="./assets/style.css">
+
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" 
+	integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5h5g7kBRv1Wl9eG7NOz6g" 
+	crossorigin="anonymous" />
+
+
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
-	<meta charset="UTF-8">
+
+	<!-- script -->
 	<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
+
+
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="./assets/maugallery.js"></script>
-	<script src="./assets/scripts.js"></script>
+	
+	<script src="./assets/maugallery.js" defer></script>
+	<script src="./assets/scripts.js" defer></script>    
+	<!--pour diferencer lors du chargement de la page html et du js-->
 </head>
 
+
+<!-- favicon  -->
+<link rel="icon" href="./assets/images/camera.png" type="image/x-icon">
+
+<!-- Minimise le fichier CSS et  JS  -->
+<link rel="stylesheet" href="./assets/style.min.css">
+<script src="./assets/scripts.min.js" defer></script>
+
+<!-- async  permettre au navigateur de charger le script en parallèle sans bloquer le rendu de la page, améliorant ainsi les performances du site. 
+ -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" async integrity="sha256-KyZXEAg3QhqLMpG8r+Knujsl5+5hb7x1lZ9fX+3s9gI=" crossorigin="anonymous"></script>
 <body>
 <div class="top-header">
 	<h3 class="name">Nina Carducci</h3>
@@ -89,13 +133,32 @@
 		</div>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.jpg" class="d-block w-100" alt="...">
+				
+				<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.jpg"
+				loading="lazy"
+				srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.jpg 1200w, ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-medium.jpg 768w, ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-small.jpg 480w"
+				sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+				class="d-block w-100" alt="Homme sur une route">
 			</div>
 			<div class="carousel-item">
-				<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.jpg" class="d-block w-100" alt="...">
+				<img 
+					src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.jpg" 
+					loading="lazy" 
+					srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.jpg 1200w, ./assets/images/slider/nicholas-green-nPz8akkUmDI-medium.jpg 768w, ./assets/images/slider/nicholas-green-nPz8akkUmDI-small.jpg 480w" 
+					sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" 
+					class="d-block w-100" 
+					alt="Paysage naturel"
+				>
 			</div>
 			<div class="carousel-item">
-				<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.jpg" class="d-block w-100" alt="...">
+				<img 
+					src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.jpg" 
+					loading="lazy" 
+					srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.jpg 1200w, ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-medium.jpg 768w, ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-small.jpg 480w" 
+					sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" 
+					class="d-block w-100" 
+					alt="Portrait d'une femme souriante"
+				>
 			</div>
 		</div>
 		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

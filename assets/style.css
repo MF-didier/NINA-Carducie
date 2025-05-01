@@ -258,6 +258,12 @@ input[type="submit"] {
 	#about-me h6, #about-me p {
 		width: 100%;
 	}
+	
+		.d-block {
+		  width: 100vw; 
+		}
+	  /*** ajout */
+	  
 }
 
 @media all and (max-width: 1000px) {
@@ -352,5 +358,14 @@ input[type="submit"] {
 	.picture {
 		width: 80%;
 	}
+	/**.nav-item{
+		color: #fff;
+		background-color: #c41575;
+		gap: 1em;
+		
+		
+
+	}**/
 }
+
 
