@@ -46,8 +46,8 @@
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-KyZXEAg3QhqLMpG8r+Knujsl5+5hb7x1lZ9fX+3s9gI=" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-7+Q2j6v4g" crossorigin="anonymous"></script>
-	<script src="./assets/maugallery.js"></script>
-	<script src="./assets/scripts.js"></script>
+	<script src="./assets/maugallery.js" defer></script>
+	<script src="./assets/scripts.js" defer></script>
 
 
 	<!-- Schema markup -->
@@ -94,18 +94,14 @@
 
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	
-	<script src="./assets/maugallery.js" defer></script>
-	<script src="./assets/scripts.js" defer></script>    
-	<!--pour diferencer lors du chargement de la page html et du js-->
+	
 </head>
 
 
 <!-- favicon  -->
 <link rel="icon" href="./assets/images/camera.png" type="image/x-icon">
 
-<!-- Minimise le fichier CSS et  JS  -->
-<link rel="stylesheet" href="./assets/style.min.css">
-<script src="./assets/scripts.min.js" defer></script>
+
 
 <!-- async  permettre au navigateur de charger le script en parallèle sans bloquer le rendu de la page, améliorant ainsi les performances du site. 
  -->
@@ -270,5 +266,10 @@
 		</div>
 	</div>
 </div>
+ 
+<!--script -->
+<script src="./assets/maugallery.js" defer></script>
+	<script src="./assets/scripts.js" defer></script>    
+	<!--pour diferencer lors du chargement de la page html et du js-->
 </body>
 </html>
