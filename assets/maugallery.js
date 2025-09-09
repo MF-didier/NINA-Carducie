@@ -154,7 +154,7 @@
         }
       });
       next =
-        imagesCollection[index] ||
+        imagesCollection[--index] ||
         imagesCollection[imagesCollection.length - 1];
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
@@ -192,10 +192,9 @@
           index = i;
         }
       });
-      next = imagesCollection[index] || imagesCollection[0];
+      next = imagesCollection[++index] || imagesCollection[0];
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
-
     createLightBox(gallery, lightboxId, navigation) {
       gallery.append(`<div class="modal fade" id="${
         lightboxId ? lightboxId : "galleryLightbox"
@@ -218,7 +217,6 @@
                     </div>
                 </div>
             </div>`);
-            
     },
     showItemTags(gallery, position, tags) {
       var tagItems =
@@ -242,9 +240,8 @@
         return;
       }
       $(".active-tag").removeClass("active active-tag");
-      $(this).addClass("active");
-      $(this).addClass("active-tag");
- 
+      $(this).addClass("active active-tag");
+
       var tag = $(this).data("images-toggle");
 
       $(".gallery-item").each(function() {

@@ -40,6 +40,7 @@ body {
 
 .social-link img {
 	width: 20px;
+	height: 20px;
 }
 
 #about {
@@ -69,7 +70,6 @@ body {
 
 .picture img {
 	width: 100%;
-
 }
 #about-me {
 	flex: 2
@@ -84,31 +84,34 @@ body {
 	font-weight: 800;
 	font-style: italic;
 	width: 60%;
+    font-size: 1rem;
+    margin: 0 0 8px 0;
 }
 #about-me p {
 	width: 80%;
 	font-size: 14px;
 }
 
-#gallery {
-	/*	min-height: 100vh; */
-}
+/*#gallery {
+	min-height: 100vh;
+}*/
 .title{
 	text-align: center;
 	padding-block: 2em;
 }
 .gallery .nav {
 	justify-content: center;
+	cursor: pointer;
+	
 }
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-	color: #fff;
+.nav-pills .nav-link.active-tag, .nav-pills .show > .nav-link {
+	color:black;
 	background-color: #BEB45A;
 	border-radius:0 ;
 }
 .nav-pills .nav-link {
-	color: #000;
-	cursor: pointer; /*pointer on hover*/
-} 
+	color: #000
+}
 .item-column {
 	position: relative;
 	margin-bottom: 0 !important;
@@ -245,6 +248,18 @@ input[type="submit"] {
 	padding: .5em 1em
 }
 
+.w-100{
+	aspect-ratio: auto 80 / 37;
+	max-width: 100%;
+  	height: auto;
+}
+
+#about img, #contact img{
+	aspect-ratio: auto 1 / 1;
+	max-width: 100%;
+  	height: auto;
+}
+
 @media all and (max-width: 1180px) {
 	.picture {
 		flex : 2;
@@ -256,15 +271,9 @@ input[type="submit"] {
 		margin-top: 0;
 		margin-bottom: 1em;
 	}
-	#about-me h6, #about-me p {
+	#about-me h3, #about-me p {
 		width: 100%;
 	}
-	
-		.d-block {
-		  width: 100vw; 
-		}
-	  /*** ajout */
-	  
 }
 
 @media all and (max-width: 1000px) {
@@ -359,14 +368,4 @@ input[type="submit"] {
 	.picture {
 		width: 80%;
 	}
-	/**.nav-item{
-		color: #fff;
-		background-color: #c41575;
-		gap: 1em;
-		
-		
-
-	}**/
 }
-
-
