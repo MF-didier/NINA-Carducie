@@ -140,6 +140,12 @@ body {
 	font-size: 24px;
 }
 
+.carousel-control-prev {
+  color: #000; 
+}
+.carousel-control-next {
+  color: #000; 
+}
 .quote {
 	font-family: 'Spectral';
 	font-style: italic;
