@@ -158,6 +158,9 @@
         imagesCollection[imagesCollection.length - 1];
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
+
+    /*next = imagesCollection[index] || imagesCollection[imagesCollection.length - 1];  */ 
+    
     nextImage() {
       let activeImage = null;
       $("img.gallery-item").each(function() {
